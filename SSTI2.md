@@ -1,20 +1,10 @@
 
-# SSTI CTF Challenge Writeup – SSTI2
+# SSTI CTF Challenge – SSTI2
 
 **Platform:** picoCTF  
 **Challenge Name:** SSTI2  
 **Category:** Web Exploitation  
-**Points:** 200  
-**Date:** 2025-06-27
 
----
-
-## Challenge Description
-
-I made a cool website where you can announce whatever you want!  
-I read about input sanitization, so now I remove any kind of characters that could be a problem :)
-
----
 
 ## Initial Observations
 
@@ -83,15 +73,6 @@ __pycache__  app.py  flag  requirements.txt
 - Understanding Jinja2 context like `request`, `config`, etc.
 - Filter bypass techniques using `attr()`, hex encoding, and string concatenation
 - Achieving remote command execution through `popen().read()`
-
----
-
-## Prevention Tips
-
-- Never render raw user input in server-side templates
-- Use sandboxed template engines or static rendering
-- Properly escape all input before rendering
-- Prefer whitelisting over blacklisting
 
 ---
 
